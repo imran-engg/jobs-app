@@ -1,0 +1,18 @@
+<h3 class="d-flex justify-content-center">Find your job</h3>
+<div class="container">
+  <ul class="nav nav-tabs row" id="mainTabs" role="tablist">
+    <div class="col-6 mr-50">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="job-tab" data-bs-toggle="tab" routerLink="alljobs" role="jobs"
+          aria-selected="true">Jobs</a>
+      </li>
+    </div>
+    <div class="col-6">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="fav-tab" data-bs-toggle="tab" routerLink="favourite" role="fav"
+          aria-selected="false">Favourites</a>
+      </li>
+    </div>
+  </ul>
+</div>
+<router-outlet></router-outlet>

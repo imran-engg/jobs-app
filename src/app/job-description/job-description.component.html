@@ -1,0 +1,20 @@
+<div class="container">
+    <span (click)="toJobsList()" style="cursor: pointer;">Back</span>
+</div>
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-6">
+            <img src='{{jobDetail?.companyLogo}}' alt="" srcset="">
+        </div>
+        <div class="col-6 ml-2">
+            {{jobDetail?.companyName}} - {{jobDetail?.title}} <br> {{jobDetail?.types}} {{jobDetail?.industries}}
+        </div>
+    </div>
+
+    Publish Date : {{jobDetail?.publishDate}} <br>
+    Location : {{jobDetail?.location}} <br>
+    Reference : {{jobDetail?.reference}} <br>
+    <div class="descriBorder mt-1">Description : <br> {{jobDetail?.description}} <br></div>
+
+</div>
