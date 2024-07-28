@@ -19,10 +19,10 @@ export class JobService {
     return this.http.get<job[]>('/jobs');
   }
 
-  getDetailedJobs(id: string) {
-    const params = { 'id': id };
-    return this.http.get<detail[]>(`jobs/${id}`, { params });
-  }
+  // getDetailedJobs(id: string) {
+  //   const params = { 'id': id };
+  //   return this.http.get<detail[]>(`jobs/${id}`, { params });
+  // }
 
   getJobData(): Observable<job[]> {
     return this.getAllJobsList().pipe(tap((data) => {
